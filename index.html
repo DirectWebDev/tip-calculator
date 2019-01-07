@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trinkgeld Kalkulator</title>
+    <link rel="stylesheet" href="lib/css/vendor/foundation.min.css">
+    <link rel="stylesheet" href="lib/css/main.css">
+
+</head>
+
+<body>
+    <main>
+        <section>
+            <div id="calc">
+                <div class="grid-container">
+                    <div class="grid-x grid-padding-x">
+                      <div class="large-12 cell">
+                        <h1>Trinkgeld Kalkulator</h1>
+
+                        <form id="form">
+                            <label for="euro">Wie hoch war Deine/Eure Rechnung?</label>
+                            €<input id="euro" type="number" placeholder="100">
+
+                            <label for="service">Wie war der Service?</label>
+
+                            <select id="service">
+                                <option value="0.3">30% - Es war grandios!</option>
+                                <option value="0.2">20% - Es war gut!</option>
+                                <option value="0.15">15% - Es war Ok.</option>
+                                <option value="0.1">10% - Es war schlecht.</option>
+                                <option value="0.05">5% - Es war furchtbar.</option>
+                            </select>
+
+                            <label for="share">Wie viele Leute teilen sich die Rechnung?</label>
+                            <input id="share" type="number" placeholder="100">
+
+                            <div class="button-group">
+                                <a class="button">Berechnen!</a>
+                            </div>
+
+                            <p class="pay">Du zahlst:<br/>
+                            <span class="amount"></span><br/>
+                        Trinkgeld</p>
+        
+                        </form>
+                      </div>
+                    </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="lib/js/vendor/what-input.js"></script>
+<script src="lib/js/vendor/foundation.min.js"></script>
+<script src="lib/js/app.js"></script>
+</html>
